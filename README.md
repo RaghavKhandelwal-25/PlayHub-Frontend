@@ -2,7 +2,7 @@
 
 A browser-based casino mini-game hub where players can bet coins across four classic games. Test your luck, beat the odds, and grow your balance — or lose it all trying.
 
-![PlayHub Main Screen](screenshot_main.png)
+<p align="center"><img src="screenshot_main.png" width="600"/></p>
 
 ---
 
@@ -50,7 +50,7 @@ PlayHub is a front-end web application built with HTML, CSS, and vanilla JavaScr
 
 > ⚠️ You must have enough coins to cover the entry cost before entering a game. If your balance is too low, you'll be blocked from entering.
 
-![Game Cards](screenshot_games.png)
+<p align="left"><img src="screenshot_games.png" width="400"/></p>
 
 ---
 
@@ -82,7 +82,7 @@ PlayHub supports multiple player profiles:
 
 The sidebar can be opened via the **hamburger menu (☰)** in the top-left of the navbar.
 
-![Sidebar & Player Menu](screenshot_sidebar.png)
+<p align="left"><img src="screenshot_sidebar.png" width="400"/></p>
 
 Sidebar links include:
 
@@ -99,7 +99,7 @@ The sidebar overlays the page with a dark backdrop and closes when clicking any 
 
 A dedicated `Instruction.html` page explains the rules of each game and how the coin system works. Accessible from the sidebar at any time.
 
-![Instructions Page](screenshot_instructions.png)
+<p align="left"><img src="screenshot_instructions.png" width="400"/></p>
 
 Rules covered per game:
 - How rounds are played and how winners are determined
@@ -111,18 +111,43 @@ Rules covered per game:
 ## 📁 Project Structure
 
 ```
-playhub/
+CASINO/
 │
-├── index.html          # Main dashboard / game hub
-├── index-style.css     # Global styles
-├── index.js            # Dashboard logic (balance, players, navigation)
-│
-├── rps.html            # Rock Paper Scissors game
-├── coinflip.html       # Coin Flip game
-├── ttt.html            # Tic Tac Toe game
-├── 7up.html            # 7 Up 7 Down game
-│
-└── Instruction.html    # How-to / rules page
+└── Casino/
+    │
+    ├── index.html                  # Main dashboard / game hub
+    ├── index-style.css             # Global styles
+    ├── index.js                    # Dashboard logic (balance, players, navigation)
+    │
+    ├── rps.html                    # Rock Paper Scissors game
+    ├── rps-style.css               # RPS styles
+    ├── rps.js                      # RPS game logic
+    │
+    ├── coinflip.html               # Coin Flip game
+    ├── coinflip-style.css          # Coin Flip styles
+    ├── cf.js                       # Coin Flip game logic
+    │
+    ├── ttt.html                    # Tic Tac Toe game
+    ├── ttt-style.css               # Tic Tac Toe styles
+    ├── ttt.js                      # Tic Tac Toe game logic
+    │
+    ├── 7up.html                    # 7 Up 7 Down game
+    ├── 7up-style.css               # 7 Up 7 Down styles
+    ├── 7up.js                      # 7 Up 7 Down game logic
+    │
+    ├── Instruction.html            # How-to / rules page
+    ├── Instructions.css            # Instructions page styles
+    │
+    ├── Here are all the colors.txt # Color reference / design notes
+    ├── Casino.cpp                  # (misc / legacy file)
+    ├── Casino.exe                  # (misc / legacy file)
+    │
+    ├── screenshot_main.png         # README screenshot
+    ├── screenshot_games.png        # README screenshot
+    ├── screenshot_sidebar.png      # README screenshot
+    ├── screenshot_instructions.png # README screenshot
+    │
+    └── README.md                   # Project documentation
 ```
 
 ---
