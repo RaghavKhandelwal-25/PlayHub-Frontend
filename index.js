@@ -10,6 +10,7 @@ let menuBtns=document.querySelectorAll('.nav-link');
 let playerMenu=document.querySelector('#player_menu');
 let changePlayer=document.querySelectorAll('.player_item');
 let currPlayer=document.querySelector('#curr-player');
+let addPlayer=document.querySelector('.add_player');
 // let saviorBtn=document.querySelector('#savior');
 
 let balance=parseInt(localStorage.getItem('balance')) || 1000; //saving balance in local storage
@@ -120,7 +121,7 @@ changePlayer.forEach((item, index)=>{
     });
 });
 
-
+addPlayer.addEventListener('click',()=>{});
 
 
 // saviorBtn.addEventListener('click',()=>{

@@ -194,6 +194,11 @@
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add_player:hover{
+    transform: scale(1.02);
 }
 
 /*-----------------------------------MIDDLE1---------------------*/
